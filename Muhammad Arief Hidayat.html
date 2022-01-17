@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+- Memakai selector class,id dan tag (done)
+- Mengubah font-size (done)
+- untuk tag <a> buat dia tidak berwarna biru (done)
+- Mengubah warna tulisan (done)
+- mengubah font (done)
+- mengubah background (done)
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Arief Hidayat</title>
+
+    <style>
+        body {
+            margin: 80px;
+            background-color: rgb(215, 246, 250);
+        }
+
+        h1 {
+            font-size: 44px;
+        }
+
+        .nama {
+            color: darkslategrey;
+            font-family: 'Segoe UI';
+            font-size: 48px;
+        }
+
+        a {
+            font-size: 16px;
+            color: black;
+            font-family: 'Oswald', sans-serif;
+        }
+
+
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        .btn {
+            background-color: rgb(52, 70, 70);
+            border: none;
+            color: white;
+            padding: 10px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .btn1 {
+            border-radius: 8px;
+        }
+
+        p#me {
+            color: dimgray;
+            text-align: left;
+            font-size: 22px;
+            padding-right: 60%;
+        }
+
+        .portofolio {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        p#deskripsi {
+            text-align: right;
+            font-size: 18px;
+            padding-left: 60%;
+        }
+
+        input[type=text],
+        select {
+            margin: 16px;
+            width: 20%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        #font-size {
+            font-size: 20px;
+        }
+
+        input[type="date"] {
+            margin: 16px;
+            width: 20%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            color: rgb(2, 20, 29);
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(100%);
+        }
+
+        .pilih {
+            display: flex;
+            width: 20%;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Hi, Im</h1>
+            <h1 class="nama">Muhammad Arief Hidayat <br> Software Engineer</h1>
+        </div>
+
+        <img src="ilustrator.svg" height="400" width="400">
+        <p id="me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione delectus quasi veritatis, id
+            natus deserunt
+            voluptatum, praesentium inventore quam odit mollitia iste quo tempore exercitationem commodi sint dolore sit
+            voluptatum, praesentium inventore quam odit mollitia iste quo tempore exercitationem commodi sint
+            sitet!</p>
+        <button class="btn btn1">Lets Talk</button>
+    </div>
+
+    <div class="flex-container">
+        <h2><a href="https://www.w3schools.com/">Work experience</a></h2>
+        <p id="deskripsi"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione delectus quasi veritatis,
+            id natus
+            deserunt
+            voluptatum, praesentium inventore quam odit mollitia iste quo tempore exercitationem commodi sint dolore
+            sit
+            voluptatum, praesentium inventore quam odit mollitia iste quo tempore exercitationem commodi sint </p>
+    </div>
+
+    <div class="portofolio">
+        <div>
+            <h2>Certification</h2>
+            <ol>
+                <li>sertifikat</li>
+                <li>Sertifikat</li>
+                <li>Sertifikat</li>
+                <li>Sertifikat</li>
+            </ol>
+        </div>
+
+        <div>
+            <h2>My Skill</h2>
+            <ul>
+                <li>Android</li>
+                <li>Kotlin</li>
+                <li>MVVM</li>
+                <li>GCP</li>
+                <li>NoSQl</li>
+                <li>PHP</li>
+                <li>Mysql</li>
+                <li>Etc</li>
+            </ul>
+        </div>
+        <div>
+            <h2 id="font-size">Experience</h2>
+            <div>
+                <img src="ilustrator.svg" height="200" width="200">
+                <p>Project 1</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <form action="" id="form1">
+        <div>
+            <h1>Contact Us</h1>
+            <div>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+            </div>
+            <br>
+            <div>
+                <div>
+                    <label for="tmulai">Start Date</label>
+                    <input type="date" id="tmulai" name="tmulai">
+                </div>
+                <div>
+                    <label for="takhir">End Date</label>
+                    <input type="date" id="takhir" name="takhir">
+                </div>
+            </div>
+            <br>
+            <div class="pilih">
+                <div>
+                    <label>Programming Resource</label><br>
+                    <input type="checkbox" name="ps1" id="ps1" value="1">
+                    <label for="ps1">Frontend</label><br>
+
+                    <input type="checkbox" name="ps2" id="ps2" value="2">
+                    <label for="ps2">Backend</label><br>
+
+                    <input type="checkbox" name="ps3" id="ps3" value="3">
+                    <label for="ps3">Analist</label><br>
+                </div>
+                <br>
+                <div>
+                    <label>Budget Estimation</label><br>
+                    <input type="radio" name="budget" id="level1" value="1">
+                    <label for="level1">less than $500</label><br>
+
+                    <input type="radio" name="budget" id="level2" value="2">
+                    <label for="level2">$500 - $1000</label><br>
+
+                    <input type="radio" name="budget" id="level3" value="3">
+                    <label for="level3">more than $1000</label><br>
+                </div>
+            </div>
+
+            <br>
+            <div>
+                <label for="represen">Representatives of</label>
+
+                <select id="represen">
+                    <option value="1">Individu</option>
+                    <option value="2">Company</option>
+                    <option value="3">Governance</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="button" class="btn btn1" value="Save" onclick="simpan()">
+            </div>
+        </div>
+    </form>
+    <div>
+
+    </div><br>
+
+</body>
+
+</html>
